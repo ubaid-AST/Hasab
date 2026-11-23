@@ -1005,7 +1005,7 @@ html[data-theme="dark"] .control input[type="date"]::-webkit-calendar-picker-ind
   <div class="report-header">
     <div class="report-date" id="outDate">—</div>
     <div class="report-title">
-      <div class="rt-main">DDO FINANCIAL STATEMENT</div>
+      <!-- <div class="rt-main">DDO FINANCIAL STATEMENT</div> -->
       <div class="rt-sub" id="outSub" style="display:none"></div>
     </div>
   </div>
@@ -1532,7 +1532,7 @@ html[data-theme="dark"] .control input[type="date"]::-webkit-calendar-picker-ind
     const code = $('ddoCode').value.trim();
     const office = $('officeName').value.trim();
     const subParts = [];
-    if (code) subParts.push('DDO: ' + code);
+    if (code) subParts.push(code);
     if (office) subParts.push(office);
     const subEl = $('outSub');
     subEl.textContent = subParts.join('  |  ');
